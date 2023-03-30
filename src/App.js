@@ -21,7 +21,7 @@ function App() {
     //   <div className='gray-box'></div>
     // </>
     <Wrapper>
-      <Hello name="React" color="red"></Hello>
+      <Hello name="React" color="red" isSpecial={true}></Hello>
       <Hello color = "pink"></Hello>
     </Wrapper>
   );
