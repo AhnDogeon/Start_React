@@ -3,6 +3,7 @@
 import React from 'react';
 import Hello from './Hello';
 import './App.css';
+import Wrapper from './Wrapper';
 
 function App() {
   const name = 'react';
@@ -13,12 +14,16 @@ function App() {
     padding: '1rem'
   }
   return (
-    <>
-      <Hello name="react" color="blue"/>
-      <Hello />
-      <div style={style}>{name}</div>
-      <div className='gray-box'></div>
-    </>
+    // <>
+    //   <Hello name="react" color="blue"/>
+    //   <Hello />
+    //   <div style={style}>{name}</div>
+    //   <div className='gray-box'></div>
+    // </>
+    <Wrapper>
+      <Hello name="React" color="red"></Hello>
+      <Hello color = "pink"></Hello>
+    </Wrapper>
   );
 }
 
